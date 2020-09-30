@@ -16,6 +16,10 @@ public:
     ~MainWindow();
 
 private:
+    void on_print_clicked();
+    void on_save_clicked();
+
+private:
     Ui::MainWindow *ui;
 };
 
