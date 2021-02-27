@@ -10,7 +10,7 @@ set(CMAKE_AUTORCC ON)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt5 COMPONENTS Widgets REQUIRED)
+find_package(Qt6 COMPONENTS Widgets REQUIRED)
 
 set(headers
     include/qtcapp/MainWindow.hpp
@@ -29,4 +29,4 @@ add_executable(qtapp ${headers} ${sources} ${ui_files})
 
 target_include_directories(${PROJECT_NAME} PRIVATE include)
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_11)
-target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Widgets)
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::Widgets)
